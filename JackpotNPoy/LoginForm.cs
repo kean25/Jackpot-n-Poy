@@ -59,5 +59,10 @@ namespace JackpotNPoy
                 textBoxPassword.ForeColor = Color.Silver;
             }
         }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Email or Password are incorrect please try again.", "JackPotNPoy", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+        }
     }
 }
