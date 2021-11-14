@@ -24,7 +24,40 @@ namespace JackpotNPoy
 
         private void textBoxUsername_TextChanged(object sender, EventArgs e)
         {
-          
+            if (textBoxUsername.Text == "Username")
+            {
+                textBoxUsername.Text = "";
+                textBoxUsername.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxUsername_Leave(object sender, EventArgs e)
+        {
+            if (textBoxUsername.Text == "")
+            {
+                textBoxUsername.Text = "Username";
+                textBoxUsername.ForeColor = Color.Silver;
+            }
+        }
+
+        private void textBoxPassword_Enter(object sender, EventArgs e)
+        {
+            if (textBoxPassword.Text == "Password")
+            {
+                textBoxPassword.Text = "";
+                textBoxPassword.PasswordChar = '*';
+                textBoxPassword.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxPassword_Leave(object sender, EventArgs e)
+        {
+            if (textBoxPassword.Text == "")
+            {
+                textBoxPassword.Text = "Password";
+                textBoxPassword.PasswordChar = default;
+                textBoxPassword.ForeColor = Color.Silver;
+            }
         }
     }
 }
