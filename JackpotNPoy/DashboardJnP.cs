@@ -33,8 +33,10 @@ namespace JackpotNPoy
         private void btnLogout_Click(object sender, EventArgs e)
         {
             LogInForm logout = new LogInForm();
-            logout.ShowDialog();
+            
             this.Hide();
+            logout.ShowDialog();
+            this.Close();
         }
     }
 }
