@@ -78,19 +78,19 @@ namespace JackpotNPoy
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(103, 366);
+            this.linkLabel1.Location = new System.Drawing.Point(82, 366);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(164, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(207, 15);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Don\'t have account use Guest";
+            this.linkLabel1.Text = "Don\'t have account Enter as a ( Guest)";
             // 
             // LogInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::JackpotNPoy.Properties.Resources.darkmode;
-            this.ClientSize = new System.Drawing.Size(371, 515);
+            this.ClientSize = new System.Drawing.Size(371, 546);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
