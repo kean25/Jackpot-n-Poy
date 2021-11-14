@@ -29,21 +29,11 @@ namespace JackpotNPoy
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnLogin = new System.Windows.Forms.Button();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.roundedButton1 = new Tophet.RoundedButton();
             this.SuspendLayout();
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.Location = new System.Drawing.Point(137, 394);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(98, 43);
-            this.btnLogin.TabIndex = 0;
-            this.btnLogin.Text = "Log in";
-            this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // textBoxUsername
             // 
@@ -80,10 +70,23 @@ namespace JackpotNPoy
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(82, 366);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(207, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(210, 15);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Don\'t have account Enter as a ( Guest)";
+            this.linkLabel1.Text = "Don\'t have account Enter as a ( Guest )";
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.roundedButton1.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(98, 394);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(166, 55);
+            this.roundedButton1.TabIndex = 9;
+            this.roundedButton1.Text = "Login";
+            this.roundedButton1.UseVisualStyleBackColor = false;
             // 
             // LogInForm
             // 
@@ -91,10 +94,10 @@ namespace JackpotNPoy
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::JackpotNPoy.Properties.Resources.darkmode;
             this.ClientSize = new System.Drawing.Size(371, 546);
+            this.Controls.Add(this.roundedButton1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
-            this.Controls.Add(this.btnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "LogInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -106,11 +109,10 @@ namespace JackpotNPoy
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private Tophet.RoundedButton roundedButton1;
     }
 }
 
