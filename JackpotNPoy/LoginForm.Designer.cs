@@ -33,6 +33,7 @@ namespace JackpotNPoy
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.LoginButton = new Tophet.RoundedButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxUsername
@@ -89,12 +90,27 @@ namespace JackpotNPoy
             this.LoginButton.UseVisualStyleBackColor = false;
             this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Alef", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(181, 34);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Jackpot n\' Poy";
+            // 
             // LogInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::JackpotNPoy.Properties.Resources.darkmode;
             this.ClientSize = new System.Drawing.Size(371, 546);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBoxPassword);
@@ -114,6 +130,7 @@ namespace JackpotNPoy
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Tophet.RoundedButton LoginButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 
