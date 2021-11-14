@@ -16,7 +16,7 @@ namespace JackpotNPoy
         {
             InitializeComponent();
         }
-
+        RunnerData rt = new RunnerData();
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -62,6 +62,14 @@ namespace JackpotNPoy
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            if (textBoxUsername.Text == rt.email && textBoxPassword.Text == rt.password) 
+            {
+                DashboardJnP djp = new DashboardJnP();
+                this.Hide();
+                djp.ShowDialog();
+                djp.ShowDialog();
+                this.Close();
+            }
             MessageBox.Show("Email or Password are incorrect please try again.", "JackPotNPoy", MessageBoxButtons.OK, MessageBoxIcon.Hand);
         }
     }
