@@ -19,5 +19,22 @@ namespace JackpotNPoy
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // ##asdasdasd
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            LogInForm logout = new LogInForm();
+            logout.ShowDialog();
+            this.Hide();
+        }
     }
 }
