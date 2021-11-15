@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeric\\Documents\\gitHub\\Jackpot-n-Poy\\JackpotNPoy\\JackpotNPoy.csproj": {}
+    "C:\\Users\\USER\\Documents\\GitHub\\Jackpot-n-Poy\\JackpotNPoy\\JackpotNPoy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeric\\Documents\\gitHub\\Jackpot-n-Poy\\JackpotNPoy\\JackpotNPoy.csproj": {
+    "C:\\Users\\USER\\Documents\\GitHub\\Jackpot-n-Poy\\JackpotNPoy\\JackpotNPoy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeric\\Documents\\gitHub\\Jackpot-n-Poy\\JackpotNPoy\\JackpotNPoy.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub\\Jackpot-n-Poy\\JackpotNPoy\\JackpotNPoy.csproj",
         "projectName": "JackpotNPoy",
-        "projectPath": "C:\\Users\\jeric\\Documents\\gitHub\\Jackpot-n-Poy\\JackpotNPoy\\JackpotNPoy.csproj",
-        "packagesPath": "C:\\Users\\jeric\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeric\\Documents\\gitHub\\Jackpot-n-Poy\\JackpotNPoy\\obj\\",
+        "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Jackpot-n-Poy\\JackpotNPoy\\JackpotNPoy.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\GitHub\\Jackpot-n-Poy\\JackpotNPoy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jeric\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
