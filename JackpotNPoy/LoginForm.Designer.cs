@@ -34,6 +34,8 @@ namespace JackpotNPoy
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.LoginButton = new Tophet.RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.imageData1 = new Tophet.ImageData();
+            ((System.ComponentModel.ISupportInitialize)(this.imageData1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxUsername
@@ -104,12 +106,23 @@ namespace JackpotNPoy
             this.label1.TabIndex = 10;
             this.label1.Text = "Jackpot n\' Poy";
             // 
+            // imageData1
+            // 
+            this.imageData1.Image = global::JackpotNPoy.Properties.Resources.DefaultNoUser;
+            this.imageData1.Location = new System.Drawing.Point(129, 163);
+            this.imageData1.Name = "imageData1";
+            this.imageData1.Size = new System.Drawing.Size(100, 90);
+            this.imageData1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageData1.TabIndex = 11;
+            this.imageData1.TabStop = false;
+            // 
             // LogInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::JackpotNPoy.Properties.Resources.darkmode;
             this.ClientSize = new System.Drawing.Size(371, 546);
+            this.Controls.Add(this.imageData1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.linkLabel1);
@@ -120,6 +133,7 @@ namespace JackpotNPoy
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jackpot n\' Poy";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.imageData1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +145,7 @@ namespace JackpotNPoy
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Tophet.RoundedButton LoginButton;
         private System.Windows.Forms.Label label1;
+        private Tophet.ImageData imageData1;
     }
 }
 

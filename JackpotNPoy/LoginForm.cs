@@ -38,6 +38,7 @@ namespace JackpotNPoy
 
         private void textBoxUsername_TextChanged(object sender, EventArgs e)
         {
+
             if (textBoxUsername.Text == "Username")
             {
                 textBoxUsername.Text = "";

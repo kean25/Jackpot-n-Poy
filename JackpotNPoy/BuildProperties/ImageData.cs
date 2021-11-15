@@ -19,5 +19,6 @@ namespace Tophet
             this.Region = new System.Drawing.Region(grpath);
             base.OnPaint(pe);
         }
+
     }
 }
