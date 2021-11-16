@@ -38,5 +38,52 @@ namespace JackpotNPoy
             logout.ShowDialog();
             this.Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPlayerWL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPlayerBalance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabelReset_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabelReset.Enabled = false;
+        }
+
+        private void roundedButtonPlay_Click(object sender, EventArgs e)
+        {
+            linkLabelReset.Enabled = true;
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRock_Click(object sender, EventArgs e)
+        {
+            
+
+
+        }
     }
 }
