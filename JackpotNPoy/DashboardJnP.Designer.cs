@@ -109,7 +109,6 @@ namespace JackpotNPoy
             this.lblPlayerBalance.Size = new System.Drawing.Size(89, 15);
             this.lblPlayerBalance.TabIndex = 0;
             this.lblPlayerBalance.Text = "Player Balance: ";
-            this.lblPlayerBalance.Click += new System.EventHandler(this.lblPlayerBalance_Click);
             // 
             // panel2
             // 
@@ -138,14 +137,15 @@ namespace JackpotNPoy
             this.lblPlayerName.Size = new System.Drawing.Size(80, 15);
             this.lblPlayerName.TabIndex = 0;
             this.lblPlayerName.Text = "Player Name: ";
-            this.lblPlayerName.Click += new System.EventHandler(this.label1_Click);
             // 
             // imageData1
             // 
             this.imageData1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.imageData1.Image = global::JackpotNPoy.Properties.Resources.DefaultNoUser;
             this.imageData1.Location = new System.Drawing.Point(12, 15);
             this.imageData1.Name = "imageData1";
             this.imageData1.Size = new System.Drawing.Size(80, 72);
+            this.imageData1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageData1.TabIndex = 0;
             this.imageData1.TabStop = false;
             // 
@@ -209,7 +209,6 @@ namespace JackpotNPoy
             this.btnScissor.TabIndex = 2;
             this.btnScissor.Text = "Scissors";
             this.btnScissor.UseVisualStyleBackColor = true;
-            this.btnScissor.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnPaper
             // 
@@ -242,12 +241,13 @@ namespace JackpotNPoy
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox1.Image = global::JackpotNPoy.Properties.Resources._53852_D8C08AD0_1AEA_46C7_9305_B9BB4699F804_0_1519906916;
             this.pictureBox1.Location = new System.Drawing.Point(16, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(203, 134);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // panel6
             // 
@@ -260,12 +260,13 @@ namespace JackpotNPoy
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox2.Image = global::JackpotNPoy.Properties.Resources._53852_D8C08AD0_1AEA_46C7_9305_B9BB4699F804_0_1519906916;
             this.pictureBox2.Location = new System.Drawing.Point(16, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(203, 134);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // lblPlayerCountBattle
             // 
@@ -319,7 +320,6 @@ namespace JackpotNPoy
             this.lblPlayerWL.Size = new System.Drawing.Size(131, 15);
             this.lblPlayerWL.TabIndex = 0;
             this.lblPlayerWL.Text = "Show Player win or lose";
-            this.lblPlayerWL.Click += new System.EventHandler(this.lblPlayerWL_Click);
             // 
             // lblLinkSurrender
             // 

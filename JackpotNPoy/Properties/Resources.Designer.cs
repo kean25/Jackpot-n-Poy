@@ -63,6 +63,16 @@ namespace JackpotNPoy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _53852_D8C08AD0_1AEA_46C7_9305_B9BB4699F804_0_1519906916 {
+            get {
+                object obj = ResourceManager.GetObject("53852-D8C08AD0-1AEA-46C7-9305-B9BB4699F804-0-1519906916", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap darkmode {
             get {
                 object obj = ResourceManager.GetObject("darkmode", resourceCulture);
