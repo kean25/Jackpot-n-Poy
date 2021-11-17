@@ -41,11 +41,11 @@ namespace JackpotNPoy
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxUsername.ForeColor = System.Drawing.Color.Silver;
             this.textBoxUsername.Location = new System.Drawing.Point(56, 272);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(259, 29);
+            this.textBoxUsername.Size = new System.Drawing.Size(259, 26);
             this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.Text = "Username";
             this.textBoxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -55,11 +55,11 @@ namespace JackpotNPoy
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxPassword.ForeColor = System.Drawing.Color.Silver;
             this.textBoxPassword.Location = new System.Drawing.Point(56, 322);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(259, 29);
+            this.textBoxPassword.Size = new System.Drawing.Size(259, 26);
             this.textBoxPassword.TabIndex = 7;
             this.textBoxPassword.Text = "Password";
             this.textBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -83,7 +83,7 @@ namespace JackpotNPoy
             // 
             this.LoginButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.LoginButton.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LoginButton.ForeColor = System.Drawing.Color.White;
             this.LoginButton.Location = new System.Drawing.Point(98, 394);
             this.LoginButton.Name = "LoginButton";
@@ -99,11 +99,11 @@ namespace JackpotNPoy
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Alef", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 34);
+            this.label1.Size = new System.Drawing.Size(182, 31);
             this.label1.TabIndex = 10;
             this.label1.Text = "Jackpot n\' Poy";
             // 
@@ -121,11 +121,11 @@ namespace JackpotNPoy
             // 
             this.ExitProgram.AutoSize = true;
             this.ExitProgram.BackColor = System.Drawing.Color.Transparent;
-            this.ExitProgram.Font = new System.Drawing.Font("Alef", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ExitProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ExitProgram.ForeColor = System.Drawing.Color.Red;
-            this.ExitProgram.Location = new System.Drawing.Point(319, 6);
+            this.ExitProgram.Location = new System.Drawing.Point(325, 6);
             this.ExitProgram.Name = "ExitProgram";
-            this.ExitProgram.Size = new System.Drawing.Size(40, 37);
+            this.ExitProgram.Size = new System.Drawing.Size(34, 31);
             this.ExitProgram.TabIndex = 12;
             this.ExitProgram.Text = "ⓧ";
             // 

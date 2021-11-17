@@ -82,7 +82,7 @@ namespace JackpotNPoy
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Thistle;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.imageData1);
@@ -94,7 +94,7 @@ namespace JackpotNPoy
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Thistle;
+            this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.Controls.Add(this.lblPlayerBalance);
             this.panel3.Location = new System.Drawing.Point(338, 15);
             this.panel3.Name = "panel3";
@@ -113,7 +113,7 @@ namespace JackpotNPoy
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Thistle;
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.lblStatus);
             this.panel2.Controls.Add(this.lblPlayerName);
             this.panel2.Location = new System.Drawing.Point(112, 15);
@@ -151,7 +151,7 @@ namespace JackpotNPoy
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Thistle;
+            this.panel4.BackColor = System.Drawing.SystemColors.Control;
             this.panel4.Controls.Add(this.linkLabelReset);
             this.panel4.Controls.Add(this.roundedButtonPlay);
             this.panel4.Controls.Add(this.btnLock);
@@ -232,7 +232,7 @@ namespace JackpotNPoy
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Thistle;
+            this.panel5.BackColor = System.Drawing.SystemColors.Control;
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Location = new System.Drawing.Point(25, 126);
             this.panel5.Name = "panel5";
@@ -304,7 +304,7 @@ namespace JackpotNPoy
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.Thistle;
+            this.panel8.BackColor = System.Drawing.SystemColors.Control;
             this.panel8.Controls.Add(this.lblPlayerWL);
             this.panel8.Location = new System.Drawing.Point(148, 345);
             this.panel8.Name = "panel8";
