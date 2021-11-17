@@ -129,6 +129,7 @@ namespace JackpotNPoy
             this.ExitProgram.Size = new System.Drawing.Size(34, 31);
             this.ExitProgram.TabIndex = 12;
             this.ExitProgram.Text = "ⓧ";
+            this.ExitProgram.Click += new System.EventHandler(this.ExitProgram_Click);
             // 
             // LogInForm
             // 
