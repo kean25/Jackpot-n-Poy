@@ -220,13 +220,16 @@ namespace JackpotNPoy
             // 
             // roundedButtonPlay
             // 
+            this.roundedButtonPlay.BackColor = System.Drawing.Color.DarkGray;
+            this.roundedButtonPlay.Enabled = false;
             this.roundedButtonPlay.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.roundedButtonPlay.ForeColor = System.Drawing.Color.DarkRed;
             this.roundedButtonPlay.Location = new System.Drawing.Point(76, 199);
             this.roundedButtonPlay.Name = "roundedButtonPlay";
             this.roundedButtonPlay.Size = new System.Drawing.Size(110, 85);
             this.roundedButtonPlay.TabIndex = 5;
-            this.roundedButtonPlay.Text = "Play";
-            this.roundedButtonPlay.UseVisualStyleBackColor = true;
+            this.roundedButtonPlay.Text = "Bet first!";
+            this.roundedButtonPlay.UseVisualStyleBackColor = false;
             this.roundedButtonPlay.Click += new System.EventHandler(this.roundedButtonPlay_Click);
             // 
             // btnLock
@@ -238,13 +241,17 @@ namespace JackpotNPoy
             this.btnLock.TabIndex = 4;
             this.btnLock.Text = "Lock";
             this.btnLock.UseVisualStyleBackColor = true;
+            this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
             // 
             // textBoxBet
             // 
+            this.textBoxBet.ForeColor = System.Drawing.Color.Black;
             this.textBoxBet.Location = new System.Drawing.Point(51, 155);
+            this.textBoxBet.MaxLength = 10;
             this.textBoxBet.Name = "textBoxBet";
             this.textBoxBet.Size = new System.Drawing.Size(109, 23);
             this.textBoxBet.TabIndex = 3;
+            this.textBoxBet.TextChanged += new System.EventHandler(this.textBoxBet_TextChanged);
             // 
             // btnScissor
             // 

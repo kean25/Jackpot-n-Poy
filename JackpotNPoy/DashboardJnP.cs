@@ -13,6 +13,7 @@ namespace JackpotNPoy
         public DashboardJnP()
         {
             InitializeComponent();
+            
         }
         //Changes Function
         public PictureBox profileChange 
@@ -61,6 +62,41 @@ namespace JackpotNPoy
         private void btnRock_Click(object sender, EventArgs e)
         {
             
+
+
+        }
+
+        private void btnLock_Click(object sender, EventArgs e)
+        {
+            if(this.textBoxBet.Text== "0" || this.textBoxBet.Text == "") 
+            {
+                MessageBox.Show("Please Bet first, to start to play!", "Jackpot n' poy", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            }
+        }
+
+        private void textBoxBet_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBoxBet.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please Enter Number Only!", "Jackpot n' poy", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                textBoxBet.Text = textBoxBet.Text.Remove(textBoxBet.Text.Length - 1);
+
+            }
+            else if (this.textBoxBet.Text ==  "0" || this.textBoxBet.Text == "")
+            {
+                
+                this.roundedButtonPlay.Enabled = false;
+                this.roundedButtonPlay.Text = "Bet first!";
+                this.roundedButtonPlay.BackColor = Color.DarkGray;
+                this.roundedButtonPlay.ForeColor = Color.DarkRed;
+            }
+            else if (this.textBoxBet.Text.Length >= 1)
+            {
+                this.roundedButtonPlay.Enabled = true;
+                this.roundedButtonPlay.Text = "Play";
+                this.roundedButtonPlay.ForeColor = Color.White;
+                this.roundedButtonPlay.BackColor = Color.Black;
+            }
 
 
         }
