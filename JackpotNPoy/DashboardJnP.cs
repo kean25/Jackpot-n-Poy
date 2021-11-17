@@ -15,6 +15,11 @@ namespace JackpotNPoy
             InitializeComponent();
         }
         //Changes Function
+        public PictureBox profileChange 
+        {
+            get { return this.imageData1; }
+            set { this.imageData1 = (Tophet.ImageData)value; }
+        }
         public Label playerChangeName 
         {
             get { return this.PlayerNameLabelC; }

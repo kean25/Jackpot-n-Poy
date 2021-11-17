@@ -8,12 +8,19 @@ namespace JackpotNPoy
     {
         private string Email,Password;
         private string PlayerName;
+        private Tophet.ImageData PlayerProfile = new Tophet.ImageData();
         public string Trial_Name = "Guest"; //Guest
         public string Status_Trial = "Trial"; // Guest
         public string Status_Player = "Player"; // Player
         public float Defualt_Balance = 5000.00f; // Player
         public string Trial_Balance = "Infinite"; // Guest
 
+        public Tophet.ImageData playerProfile 
+        {
+            get { return this.PlayerProfile; }
+            set { this.PlayerProfile = value; }
+
+        }
         public string playerName 
         {
             get { return PlayerName; }
@@ -33,6 +40,7 @@ namespace JackpotNPoy
         public RunnerData() 
         {
             //Default Properties
+            this.playerProfile.Image = global::JackpotNPoy.Properties.Resources.Userprofilepicture;
             this.playerName = "Kazuma";
             this.email = "admin";
             this.password = "admin";

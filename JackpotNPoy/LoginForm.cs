@@ -32,6 +32,7 @@ namespace JackpotNPoy
         }
         RunnerData rt = new RunnerData();
         DashboardJnP djp = new DashboardJnP();
+        PictureBox pb = new PictureBox();
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -85,6 +86,7 @@ namespace JackpotNPoy
                 djp.playerChangeName.Text = rt.playerName; // Change Name
                 djp.statusC.Text = rt.Status_Player; // Change Status
                 djp.balanceC.Text = rt.Defualt_Balance.ToString(); // Player Balance 5000
+                djp.profileChange.Image = rt.playerProfile.Image; // Player set Image
                 //Change Tab
                 this.Hide();
                 djp.ShowDialog();
@@ -101,6 +103,7 @@ namespace JackpotNPoy
             djp.playerChangeName.Text = rt.Trial_Name; // Change Name
             djp.statusC.Text = rt.Status_Trial; // Change Status
             djp.balanceC.Text = rt.Trial_Balance; // Guest Balance Infinite
+            
             //Change Tab                   
             this.Hide();
             djp.ShowDialog();
