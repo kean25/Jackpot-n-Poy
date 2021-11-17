@@ -35,6 +35,7 @@ namespace JackpotNPoy
             this.LoginButton = new Tophet.RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
             this.imageData1 = new Tophet.ImageData();
+            this.ExitProgram = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imageData1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,12 +117,25 @@ namespace JackpotNPoy
             this.imageData1.TabIndex = 11;
             this.imageData1.TabStop = false;
             // 
+            // ExitProgram
+            // 
+            this.ExitProgram.AutoSize = true;
+            this.ExitProgram.BackColor = System.Drawing.Color.Transparent;
+            this.ExitProgram.Font = new System.Drawing.Font("Alef", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ExitProgram.ForeColor = System.Drawing.Color.Red;
+            this.ExitProgram.Location = new System.Drawing.Point(319, 6);
+            this.ExitProgram.Name = "ExitProgram";
+            this.ExitProgram.Size = new System.Drawing.Size(40, 37);
+            this.ExitProgram.TabIndex = 12;
+            this.ExitProgram.Text = "ⓧ";
+            // 
             // LogInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::JackpotNPoy.Properties.Resources.darkmode;
             this.ClientSize = new System.Drawing.Size(371, 546);
+            this.Controls.Add(this.ExitProgram);
             this.Controls.Add(this.imageData1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LoginButton);
@@ -146,6 +160,7 @@ namespace JackpotNPoy
         private Tophet.RoundedButton LoginButton;
         private System.Windows.Forms.Label label1;
         private Tophet.ImageData imageData1;
+        private System.Windows.Forms.Label ExitProgram;
     }
 }
 
