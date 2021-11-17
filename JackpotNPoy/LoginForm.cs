@@ -94,6 +94,7 @@ namespace JackpotNPoy
             MessageBox.Show("Email or Password are incorrect please try again.", "JackPotNPoy", MessageBoxButtons.OK, MessageBoxIcon.Hand);
         }
 
+<<<<<<< HEAD
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) // Guest
         {
             //Function
@@ -106,6 +107,11 @@ namespace JackpotNPoy
             djp.ShowDialog();
             this.Close();
 
+=======
+        private void ExitProgram_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(1);
+>>>>>>> b8e1d9a31479bacae05fd34a287f148090b631d9
         }
     }
 }
