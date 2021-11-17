@@ -38,6 +38,7 @@ namespace JackpotNPoy
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.imageData1 = new Tophet.ImageData();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.linkLabelReset = new System.Windows.Forms.LinkLabel();
             this.roundedButtonPlay = new Tophet.RoundedButton();
             this.btnLock = new System.Windows.Forms.Button();
             this.textBoxBet = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@ namespace JackpotNPoy
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblPlayerWL = new System.Windows.Forms.Label();
             this.lblLinkSurrender = new System.Windows.Forms.LinkLabel();
-            this.linkLabelReset = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -82,6 +82,7 @@ namespace JackpotNPoy
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Thistle;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.imageData1);
@@ -93,6 +94,7 @@ namespace JackpotNPoy
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Thistle;
             this.panel3.Controls.Add(this.lblPlayerBalance);
             this.panel3.Location = new System.Drawing.Point(338, 15);
             this.panel3.Name = "panel3";
@@ -111,6 +113,7 @@ namespace JackpotNPoy
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Thistle;
             this.panel2.Controls.Add(this.lblStatus);
             this.panel2.Controls.Add(this.lblPlayerName);
             this.panel2.Location = new System.Drawing.Point(112, 15);
@@ -148,6 +151,7 @@ namespace JackpotNPoy
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Thistle;
             this.panel4.Controls.Add(this.linkLabelReset);
             this.panel4.Controls.Add(this.roundedButtonPlay);
             this.panel4.Controls.Add(this.btnLock);
@@ -159,6 +163,17 @@ namespace JackpotNPoy
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(258, 353);
             this.panel4.TabIndex = 10;
+            // 
+            // linkLabelReset
+            // 
+            this.linkLabelReset.AutoSize = true;
+            this.linkLabelReset.Location = new System.Drawing.Point(113, 301);
+            this.linkLabelReset.Name = "linkLabelReset";
+            this.linkLabelReset.Size = new System.Drawing.Size(35, 15);
+            this.linkLabelReset.TabIndex = 6;
+            this.linkLabelReset.TabStop = true;
+            this.linkLabelReset.Text = "Reset";
+            this.linkLabelReset.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelReset_LinkClicked);
             // 
             // roundedButtonPlay
             // 
@@ -217,6 +232,7 @@ namespace JackpotNPoy
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.Thistle;
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Location = new System.Drawing.Point(25, 126);
             this.panel5.Name = "panel5";
@@ -288,6 +304,7 @@ namespace JackpotNPoy
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.Thistle;
             this.panel8.Controls.Add(this.lblPlayerWL);
             this.panel8.Location = new System.Drawing.Point(148, 345);
             this.panel8.Name = "panel8";
@@ -313,17 +330,6 @@ namespace JackpotNPoy
             this.lblLinkSurrender.TabIndex = 17;
             this.lblLinkSurrender.TabStop = true;
             this.lblLinkSurrender.Text = "Surrender";
-            // 
-            // linkLabelReset
-            // 
-            this.linkLabelReset.AutoSize = true;
-            this.linkLabelReset.Location = new System.Drawing.Point(113, 301);
-            this.linkLabelReset.Name = "linkLabelReset";
-            this.linkLabelReset.Size = new System.Drawing.Size(35, 15);
-            this.linkLabelReset.TabIndex = 6;
-            this.linkLabelReset.TabStop = true;
-            this.linkLabelReset.Text = "Reset";
-            this.linkLabelReset.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelReset_LinkClicked);
             // 
             // DashboardJnP
             // 
