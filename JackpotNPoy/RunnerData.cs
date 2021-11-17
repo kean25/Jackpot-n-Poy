@@ -8,6 +8,7 @@ namespace JackpotNPoy
     {
         private string Email,Password;
         private string PlayerName;
+        public string Trial_Name = "Guest"; //Guest
         public string Status_Trial = "Trial"; // Guest
         public string Status_Player = "Player"; // Player
         public float Defualt_Balance = 5000.00f; // Player

@@ -78,6 +78,7 @@ namespace JackpotNPoy
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Don\'t have account Enter as a ( Guest )";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // LoginButton
             // 

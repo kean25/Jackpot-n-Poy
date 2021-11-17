@@ -32,8 +32,11 @@ namespace JackpotNPoy
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.BalanceC = new System.Windows.Forms.Label();
             this.lblPlayerBalance = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.StatusC = new System.Windows.Forms.Label();
+            this.PlayerNameLabelC = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.imageData1 = new Tophet.ImageData();
@@ -96,17 +99,30 @@ namespace JackpotNPoy
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.Controls.Add(this.BalanceC);
             this.panel3.Controls.Add(this.lblPlayerBalance);
             this.panel3.Location = new System.Drawing.Point(338, 15);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(184, 70);
             this.panel3.TabIndex = 10;
             // 
+            // BalanceC
+            // 
+            this.BalanceC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.BalanceC.AutoSize = true;
+            this.BalanceC.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BalanceC.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.BalanceC.Location = new System.Drawing.Point(12, 38);
+            this.BalanceC.Name = "BalanceC";
+            this.BalanceC.Size = new System.Drawing.Size(78, 26);
+            this.BalanceC.TabIndex = 4;
+            this.BalanceC.Text = "Infinite";
+            // 
             // lblPlayerBalance
             // 
             this.lblPlayerBalance.AutoSize = true;
             this.lblPlayerBalance.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerBalance.Location = new System.Drawing.Point(15, 16);
+            this.lblPlayerBalance.Location = new System.Drawing.Point(12, 13);
             this.lblPlayerBalance.Name = "lblPlayerBalance";
             this.lblPlayerBalance.Size = new System.Drawing.Size(91, 16);
             this.lblPlayerBalance.TabIndex = 0;
@@ -115,12 +131,34 @@ namespace JackpotNPoy
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.StatusC);
+            this.panel2.Controls.Add(this.PlayerNameLabelC);
             this.panel2.Controls.Add(this.lblStatus);
             this.panel2.Controls.Add(this.lblPlayerName);
             this.panel2.Location = new System.Drawing.Point(112, 15);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(220, 71);
             this.panel2.TabIndex = 9;
+            // 
+            // StatusC
+            // 
+            this.StatusC.AutoSize = true;
+            this.StatusC.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StatusC.Location = new System.Drawing.Point(59, 46);
+            this.StatusC.Name = "StatusC";
+            this.StatusC.Size = new System.Drawing.Size(32, 16);
+            this.StatusC.TabIndex = 3;
+            this.StatusC.Text = "Trial";
+            // 
+            // PlayerNameLabelC
+            // 
+            this.PlayerNameLabelC.AutoSize = true;
+            this.PlayerNameLabelC.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerNameLabelC.Location = new System.Drawing.Point(89, 13);
+            this.PlayerNameLabelC.Name = "PlayerNameLabelC";
+            this.PlayerNameLabelC.Size = new System.Drawing.Size(39, 16);
+            this.PlayerNameLabelC.TabIndex = 2;
+            this.PlayerNameLabelC.Text = "Guest";
             // 
             // lblStatus
             // 
@@ -412,5 +450,8 @@ namespace JackpotNPoy
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.LinkLabel linkLabelReset;
+        private System.Windows.Forms.Label StatusC;
+        private System.Windows.Forms.Label BalanceC;
+        public System.Windows.Forms.Label PlayerNameLabelC;
     }
 }

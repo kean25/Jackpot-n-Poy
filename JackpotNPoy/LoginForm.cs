@@ -31,6 +31,7 @@ namespace JackpotNPoy
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
         RunnerData rt = new RunnerData();
+        DashboardJnP djp = new DashboardJnP();
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -79,13 +80,32 @@ namespace JackpotNPoy
         {
             if (textBoxUsername.Text == rt.email && textBoxPassword.Text == rt.password) 
             {
-                DashboardJnP djp = new DashboardJnP();
+                
+                //Function
+                djp.playerChangeName.Text = rt.playerName; // Change Name
+                djp.statusC.Text = rt.Status_Player; // Change Status
+                djp.balanceC.Text = rt.Defualt_Balance.ToString(); // Player Balance 5000
+                //Change Tab
                 this.Hide();
                 djp.ShowDialog();
                 djp.ShowDialog();
                 this.Close();
             }
             MessageBox.Show("Email or Password are incorrect please try again.", "JackPotNPoy", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) // Guest
+        {
+            //Function
+            djp.playerChangeName.Text = rt.Trial_Name; // Change Name
+            djp.statusC.Text = rt.Status_Trial; // Change Status
+            djp.balanceC.Text = rt.Trial_Balance; // Guest Balance Infinite
+            //Change Tab                   
+            this.Hide();
+            djp.ShowDialog();
+            djp.ShowDialog();
+            this.Close();
+
         }
     }
 }

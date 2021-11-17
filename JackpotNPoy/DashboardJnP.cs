@@ -14,12 +14,25 @@ namespace JackpotNPoy
         {
             InitializeComponent();
         }
-
-        private void btnStart_Click(object sender, EventArgs e)
+        //Changes Function
+        public Label playerChangeName 
         {
+            get { return this.PlayerNameLabelC; }
+            set { this.PlayerNameLabelC = value; }
+        }
+        public Label statusC 
+        {
+            get { return this.StatusC; }
+            set { this.StatusC = value; }
 
         }
+        public Label balanceC  
+        {
+            get { return this.BalanceC; }
+            set { this.BalanceC = value; }
 
+        }
+        //Function
         private void btnLogout_Click(object sender, EventArgs e)
         {
             LogInForm logout = new LogInForm();
