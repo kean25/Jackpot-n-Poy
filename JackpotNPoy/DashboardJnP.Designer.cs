@@ -72,6 +72,7 @@ namespace JackpotNPoy
             // 
             // btnLogout
             // 
+            this.btnLogout.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogout.Location = new System.Drawing.Point(700, 15);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(88, 47);
@@ -104,9 +105,10 @@ namespace JackpotNPoy
             // lblPlayerBalance
             // 
             this.lblPlayerBalance.AutoSize = true;
+            this.lblPlayerBalance.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPlayerBalance.Location = new System.Drawing.Point(15, 16);
             this.lblPlayerBalance.Name = "lblPlayerBalance";
-            this.lblPlayerBalance.Size = new System.Drawing.Size(89, 15);
+            this.lblPlayerBalance.Size = new System.Drawing.Size(91, 16);
             this.lblPlayerBalance.TabIndex = 0;
             this.lblPlayerBalance.Text = "Player Balance: ";
             // 
@@ -123,18 +125,20 @@ namespace JackpotNPoy
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblStatus.Location = new System.Drawing.Point(4, 46);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(45, 15);
+            this.lblStatus.Size = new System.Drawing.Size(49, 16);
             this.lblStatus.TabIndex = 1;
             this.lblStatus.Text = "Status: ";
             // 
             // lblPlayerName
             // 
             this.lblPlayerName.AutoSize = true;
+            this.lblPlayerName.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPlayerName.Location = new System.Drawing.Point(4, 13);
             this.lblPlayerName.Name = "lblPlayerName";
-            this.lblPlayerName.Size = new System.Drawing.Size(80, 15);
+            this.lblPlayerName.Size = new System.Drawing.Size(81, 16);
             this.lblPlayerName.TabIndex = 0;
             this.lblPlayerName.Text = "Player Name: ";
             // 
@@ -167,9 +171,10 @@ namespace JackpotNPoy
             // linkLabelReset
             // 
             this.linkLabelReset.AutoSize = true;
+            this.linkLabelReset.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.linkLabelReset.Location = new System.Drawing.Point(113, 301);
             this.linkLabelReset.Name = "linkLabelReset";
-            this.linkLabelReset.Size = new System.Drawing.Size(35, 15);
+            this.linkLabelReset.Size = new System.Drawing.Size(37, 16);
             this.linkLabelReset.TabIndex = 6;
             this.linkLabelReset.TabStop = true;
             this.linkLabelReset.Text = "Reset";
@@ -177,6 +182,7 @@ namespace JackpotNPoy
             // 
             // roundedButtonPlay
             // 
+            this.roundedButtonPlay.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.roundedButtonPlay.Location = new System.Drawing.Point(76, 199);
             this.roundedButtonPlay.Name = "roundedButtonPlay";
             this.roundedButtonPlay.Size = new System.Drawing.Size(110, 85);
@@ -187,6 +193,7 @@ namespace JackpotNPoy
             // 
             // btnLock
             // 
+            this.btnLock.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLock.Location = new System.Drawing.Point(158, 154);
             this.btnLock.Name = "btnLock";
             this.btnLock.Size = new System.Drawing.Size(52, 24);
@@ -203,6 +210,7 @@ namespace JackpotNPoy
             // 
             // btnScissor
             // 
+            this.btnScissor.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnScissor.Location = new System.Drawing.Point(50, 116);
             this.btnScissor.Name = "btnScissor";
             this.btnScissor.Size = new System.Drawing.Size(160, 23);
@@ -212,6 +220,7 @@ namespace JackpotNPoy
             // 
             // btnPaper
             // 
+            this.btnPaper.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPaper.Location = new System.Drawing.Point(50, 71);
             this.btnPaper.Name = "btnPaper";
             this.btnPaper.Size = new System.Drawing.Size(160, 23);
@@ -221,6 +230,7 @@ namespace JackpotNPoy
             // 
             // btnRock
             // 
+            this.btnRock.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRock.Location = new System.Drawing.Point(50, 28);
             this.btnRock.Name = "btnRock";
             this.btnRock.Size = new System.Drawing.Size(160, 23);
@@ -271,18 +281,20 @@ namespace JackpotNPoy
             // lblPlayerCountBattle
             // 
             this.lblPlayerCountBattle.AutoSize = true;
+            this.lblPlayerCountBattle.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPlayerCountBattle.Location = new System.Drawing.Point(25, 297);
             this.lblPlayerCountBattle.Name = "lblPlayerCountBattle";
-            this.lblPlayerCountBattle.Size = new System.Drawing.Size(75, 15);
+            this.lblPlayerCountBattle.Size = new System.Drawing.Size(76, 16);
             this.lblPlayerCountBattle.TabIndex = 13;
             this.lblPlayerCountBattle.Text = "Show Count ";
             // 
             // lblComputerBalance
             // 
             this.lblComputerBalance.AutoSize = true;
+            this.lblComputerBalance.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblComputerBalance.Location = new System.Drawing.Point(385, 297);
             this.lblComputerBalance.Name = "lblComputerBalance";
-            this.lblComputerBalance.Size = new System.Drawing.Size(137, 15);
+            this.lblComputerBalance.Size = new System.Drawing.Size(140, 16);
             this.lblComputerBalance.TabIndex = 14;
             this.lblComputerBalance.Text = "Show Computer Balance";
             // 
@@ -315,18 +327,20 @@ namespace JackpotNPoy
             // lblPlayerWL
             // 
             this.lblPlayerWL.AutoSize = true;
+            this.lblPlayerWL.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPlayerWL.Location = new System.Drawing.Point(53, 22);
             this.lblPlayerWL.Name = "lblPlayerWL";
-            this.lblPlayerWL.Size = new System.Drawing.Size(131, 15);
+            this.lblPlayerWL.Size = new System.Drawing.Size(135, 16);
             this.lblPlayerWL.TabIndex = 0;
             this.lblPlayerWL.Text = "Show Player win or lose";
             // 
             // lblLinkSurrender
             // 
             this.lblLinkSurrender.AutoSize = true;
+            this.lblLinkSurrender.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLinkSurrender.Location = new System.Drawing.Point(235, 426);
             this.lblLinkSurrender.Name = "lblLinkSurrender";
-            this.lblLinkSurrender.Size = new System.Drawing.Size(58, 15);
+            this.lblLinkSurrender.Size = new System.Drawing.Size(62, 16);
             this.lblLinkSurrender.TabIndex = 17;
             this.lblLinkSurrender.TabStop = true;
             this.lblLinkSurrender.Text = "Surrender";
