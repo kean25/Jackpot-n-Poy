@@ -42,7 +42,7 @@ namespace JackpotNPoy
             //Default Properties
             this.playerProfile.Image = global::JackpotNPoy.Properties.Resources.Userprofilepicture;
             this.playerName = "Kazuma";
-            this.email = "admin";
+            this.email = "Admin";
             this.password = "admin";
         }
     }
