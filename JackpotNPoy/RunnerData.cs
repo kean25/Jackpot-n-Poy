@@ -13,6 +13,7 @@ namespace JackpotNPoy
         public string Status_Trial = "Trial"; // Guest
         public string Status_Player = "Player"; // Player
         public float Defualt_Balance = 5000.00f; // Player
+        public float Enemy_Balanc = 10000.00f; // Enemy
         public string Trial_Balance = "Infinite"; // Guest
 
         public Tophet.ImageData playerProfile 

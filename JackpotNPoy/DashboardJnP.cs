@@ -15,6 +15,9 @@ namespace JackpotNPoy
             InitializeComponent();
             
         }
+        //Runner
+        RunnerData rt = new RunnerData();
+        Random random = new Random();
         //Changes Function
         public PictureBox profileChange 
         {
@@ -49,21 +52,33 @@ namespace JackpotNPoy
         }
 
 
-        private void linkLabelReset_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabelReset_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)// Reset
         {
-            linkLabelReset.Enabled = false;
+            btnLock.Enabled = true;
+            textBoxBet.Enabled = true;
+            btnPaper.Enabled = true;
+            btnRock.Enabled = true;
+            btnScissor.Enabled = true;
+            roundedButtonPlay.Enabled = true;
+            //Reset Bet
+            textBoxBet.Text = "";
         }
 
-        private void roundedButtonPlay_Click(object sender, EventArgs e)
+        private void roundedButtonPlay_Click(object sender, EventArgs e)//Start Play
         {
-            linkLabelReset.Enabled = true;
-        }
+            //Disable Other Key to Start
+            btnLock.Enabled = false;
+            textBoxBet.Enabled = false;
+            btnPaper.Enabled = false;
+            btnRock.Enabled = false;
+            btnScissor.Enabled = false;
+            roundedButtonPlay.Enabled = false;
+            //Start to Play
 
-        private void btnRock_Click(object sender, EventArgs e)
-        {
-            
-
-
+            for (int i = 0; i<4; i++) 
+            {
+                MessageBox.Show(random.Next().ToString());
+            }
         }
 
         private void btnLock_Click(object sender, EventArgs e)
@@ -72,9 +87,33 @@ namespace JackpotNPoy
             {
                 MessageBox.Show("Please Bet first, to start to play!", "Jackpot n' poy", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
+            else 
+            {
+                if (this.BalanceC.Text == "Infinite") 
+                {
+                    //Do nothing
+                }
+                else 
+                {
+                    //Check Balance
+                    if (rt.Defualt_Balance <= 0) 
+                    {
+                        MessageBox.Show("OH, NO you don't have enough balance!", "Jackpot n' poy", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else {
+                        //Start
+                        float castLock = float.Parse(this.textBoxBet.Text);
+                        rt.Defualt_Balance -= castLock;
+                        //Update Balance
+                        this.BalanceC.Text = rt.Defualt_Balance.ToString();
+                    }
+                    
+                }
+            }
+        
         }
 
-        private void textBoxBet_TextChanged(object sender, EventArgs e)
+        private void textBoxBet_TextChanged(object sender, EventArgs e)//Player Enter Bet
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(textBoxBet.Text, "[^0-9]"))
             {
@@ -98,6 +137,56 @@ namespace JackpotNPoy
                 this.roundedButtonPlay.BackColor = Color.Black;
             }
 
+
+        }
+        private void btnRock_Click(object sender, EventArgs e) // Player Pick Rock
+        {
+            if (btnRock.Focused == true)
+            {
+                //Enable Indicate
+                btnRock.BackColor = Color.Black;
+                btnRock.ForeColor = Color.White;
+                
+                //Not Select Other
+                btnPaper.BackColor = Color.White;
+                btnPaper.ForeColor = Color.Black;
+                btnScissor.BackColor = Color.White;
+                btnScissor.ForeColor = Color.Black;
+            }
+
+
+        }
+
+        private void btnPaper_Click(object sender, EventArgs e)//Player Pick Paper
+        {
+            if (btnPaper.Focused == true)
+            {
+                //Enable Indicate
+                btnPaper.BackColor = Color.Black;
+                btnPaper.ForeColor = Color.White;
+                
+                //Not Select Other
+                btnRock.BackColor = Color.White;
+                btnRock.ForeColor = Color.Black;
+                btnScissor.BackColor = Color.White;
+                btnScissor.ForeColor = Color.Black;
+            }
+
+        }
+
+        private void btnScissor_Click(object sender, EventArgs e)// Player pick Scissor
+        {
+            if (btnScissor.Focused == true)
+            {
+                //Enable Indicate
+                btnScissor.BackColor = Color.Black;
+                btnScissor.ForeColor = Color.White;
+                //Not Select Other
+                btnRock.BackColor = Color.White;
+                btnRock.ForeColor = Color.Black;
+                btnPaper.BackColor = Color.White;
+                btnPaper.ForeColor = Color.Black;
+            }
 
         }
     }

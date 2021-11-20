@@ -262,6 +262,7 @@ namespace JackpotNPoy
             this.btnScissor.TabIndex = 2;
             this.btnScissor.Text = "Scissors";
             this.btnScissor.UseVisualStyleBackColor = true;
+            this.btnScissor.Click += new System.EventHandler(this.btnScissor_Click);
             // 
             // btnPaper
             // 
@@ -272,6 +273,7 @@ namespace JackpotNPoy
             this.btnPaper.TabIndex = 1;
             this.btnPaper.Text = "Paper";
             this.btnPaper.UseVisualStyleBackColor = true;
+            this.btnPaper.Click += new System.EventHandler(this.btnPaper_Click);
             // 
             // btnRock
             // 
@@ -296,7 +298,7 @@ namespace JackpotNPoy
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox1.Image = global::JackpotNPoy.Properties.Resources._53852_D8C08AD0_1AEA_46C7_9305_B9BB4699F804_0_1519906916;
+            this.pictureBox1.Image = global::JackpotNPoy.Properties.Resources.Paper;
             this.pictureBox1.Location = new System.Drawing.Point(16, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(203, 134);
@@ -315,7 +317,7 @@ namespace JackpotNPoy
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox2.Image = global::JackpotNPoy.Properties.Resources._53852_D8C08AD0_1AEA_46C7_9305_B9BB4699F804_0_1519906916;
+            this.pictureBox2.Image = global::JackpotNPoy.Properties.Resources.Scissor;
             this.pictureBox2.Location = new System.Drawing.Point(16, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(203, 134);
