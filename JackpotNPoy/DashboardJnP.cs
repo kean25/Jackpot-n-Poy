@@ -60,6 +60,14 @@ namespace JackpotNPoy
             btnRock.Enabled = true;
             btnScissor.Enabled = true;
             roundedButtonPlay.Enabled = true;
+            //Reset Color BTN
+            //Not Select Other
+            btnRock.BackColor = Color.White;
+            btnRock.ForeColor = Color.Black;
+            btnPaper.BackColor = Color.White;
+            btnPaper.ForeColor = Color.Black;
+            btnScissor.BackColor = Color.White;
+            btnScissor.ForeColor = Color.Black;
             //Reset Bet
             textBoxBet.Text = "";
         }
@@ -73,12 +81,26 @@ namespace JackpotNPoy
             btnRock.Enabled = false;
             btnScissor.Enabled = false;
             roundedButtonPlay.Enabled = false;
-            //Start to Play
 
-            for (int i = 0; i<4; i++) 
+            //Start to Play
+            int Computer_Enemy = random.Next(3);
+            
+            if (Computer_Enemy == 0) 
             {
-                MessageBox.Show(random.Next().ToString());
+                this.lblPlayerWL.Text = "Computer Pick 0 as Rock";
+            }else if (Computer_Enemy == 1) 
+            {
+                this.lblPlayerWL.Text = "Computer Pick 1 as Paper";
             }
+            else if (Computer_Enemy == 2)
+            {
+                this.lblPlayerWL.Text = "Computer Pick 2 as Scissor";
+            }
+            else 
+            {
+                this.lblPlayerWL.Text = "Zero";
+            }
+
         }
 
         private void btnLock_Click(object sender, EventArgs e)

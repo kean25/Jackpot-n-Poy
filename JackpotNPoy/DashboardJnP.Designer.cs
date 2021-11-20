@@ -373,13 +373,15 @@ namespace JackpotNPoy
             // 
             // lblPlayerWL
             // 
+            this.lblPlayerWL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPlayerWL.AutoSize = true;
             this.lblPlayerWL.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerWL.Location = new System.Drawing.Point(53, 22);
+            this.lblPlayerWL.Location = new System.Drawing.Point(49, 21);
             this.lblPlayerWL.Name = "lblPlayerWL";
             this.lblPlayerWL.Size = new System.Drawing.Size(135, 16);
             this.lblPlayerWL.TabIndex = 0;
             this.lblPlayerWL.Text = "Show Player win or lose";
+            this.lblPlayerWL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblLinkSurrender
             // 
