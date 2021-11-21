@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 
@@ -10,6 +11,17 @@ namespace JackpotNPoy
 {
     public partial class DashboardJnP : Form
     {
+        //Border
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+       (
+           int nLeftRect,     // x-coordinate of upper-left corner
+           int nTopRect,      // y-coordinate of upper-left corner
+           int nRightRect,    // x-coordinate of lower-right corner
+           int nBottomRect,   // y-coordinate of lower-right corner
+           int nWidthEllipse, // height of ellipse
+           int nHeightEllipse // width of ellipse
+       );
         //Runner
         RunnerData rt = new RunnerData();
         Random random = new Random();
@@ -18,6 +30,9 @@ namespace JackpotNPoy
             InitializeComponent();
             this.lblComputerBalance.Text = rt.Enemy_Balanc.ToString();
             this.textBoxBet.Enabled = false;
+            //Border
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
 
         }
@@ -68,6 +83,7 @@ namespace JackpotNPoy
             playerImageBox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
             enemyImagebox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
             textBoxBet.Text = "";
+
         }
 
         private void roundedButtonPlay_Click(object sender, EventArgs e)//Start Play

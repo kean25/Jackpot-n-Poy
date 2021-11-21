@@ -41,6 +41,7 @@ namespace JackpotNPoy
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.imageData1 = new Tophet.ImageData();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.ResetGuest = new System.Windows.Forms.LinkLabel();
             this.linkLabelReset = new System.Windows.Forms.LinkLabel();
             this.roundedButtonPlay = new Tophet.RoundedButton();
             this.btnLock = new System.Windows.Forms.Button();
@@ -58,7 +59,6 @@ namespace JackpotNPoy
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblPlayerWL = new System.Windows.Forms.Label();
             this.lblLinkSurrender = new System.Windows.Forms.LinkLabel();
-            this.ResetGuest = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -207,6 +207,20 @@ namespace JackpotNPoy
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(258, 353);
             this.panel4.TabIndex = 10;
+            // 
+            // ResetGuest
+            // 
+            this.ResetGuest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ResetGuest.AutoSize = true;
+            this.ResetGuest.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetGuest.Location = new System.Drawing.Point(113, 327);
+            this.ResetGuest.Name = "ResetGuest";
+            this.ResetGuest.Size = new System.Drawing.Size(37, 16);
+            this.ResetGuest.TabIndex = 7;
+            this.ResetGuest.TabStop = true;
+            this.ResetGuest.Text = "Reset";
+            this.ResetGuest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ResetGuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ResetGuest_LinkClicked);
             // 
             // linkLabelReset
             // 
@@ -376,15 +390,14 @@ namespace JackpotNPoy
             // 
             // lblPlayerWL
             // 
-            this.lblPlayerWL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPlayerWL.AutoSize = true;
+            this.lblPlayerWL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPlayerWL.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPlayerWL.ForeColor = System.Drawing.Color.White;
-            this.lblPlayerWL.Location = new System.Drawing.Point(49, 21);
+            this.lblPlayerWL.Location = new System.Drawing.Point(0, 0);
             this.lblPlayerWL.Name = "lblPlayerWL";
-            this.lblPlayerWL.Size = new System.Drawing.Size(142, 16);
+            this.lblPlayerWL.Size = new System.Drawing.Size(0, 16);
             this.lblPlayerWL.TabIndex = 0;
-            this.lblPlayerWL.Text = "Show Player win or lose";
             this.lblPlayerWL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblLinkSurrender
@@ -397,20 +410,6 @@ namespace JackpotNPoy
             this.lblLinkSurrender.TabIndex = 17;
             this.lblLinkSurrender.TabStop = true;
             this.lblLinkSurrender.Text = "Surrender";
-            // 
-            // ResetGuest
-            // 
-            this.ResetGuest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.ResetGuest.AutoSize = true;
-            this.ResetGuest.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResetGuest.Location = new System.Drawing.Point(113, 327);
-            this.ResetGuest.Name = "ResetGuest";
-            this.ResetGuest.Size = new System.Drawing.Size(37, 16);
-            this.ResetGuest.TabIndex = 7;
-            this.ResetGuest.TabStop = true;
-            this.ResetGuest.Text = "Reset";
-            this.ResetGuest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ResetGuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ResetGuest_LinkClicked);
             // 
             // DashboardJnP
             // 
