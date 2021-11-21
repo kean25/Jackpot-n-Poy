@@ -18,7 +18,6 @@ namespace JackpotNPoy
             InitializeComponent();
             this.lblComputerBalance.Text = rt.Enemy_Balanc.ToString();
             this.textBoxBet.Enabled = false;
-            this.btnLock.Enabled = false;
 
 
         }
@@ -59,11 +58,12 @@ namespace JackpotNPoy
         private void linkLabelReset_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)// Reset
         {
             btnLock.Enabled = true;
-            textBoxBet.Enabled = true;
             btnPaper.Enabled = true;
             btnRock.Enabled = true;
             btnScissor.Enabled = true;
-            roundedButtonPlay.Enabled = true;
+            textBoxBet.Enabled = false;
+            roundedButtonPlay.Enabled = false;
+            
             //Reset Color BTN
             //Not Select Other
             btnRock.BackColor = Color.White;
@@ -75,8 +75,9 @@ namespace JackpotNPoy
             btnLock.BackColor = Color.White;
             btnLock.ForeColor = Color.Black;
             //Reset Bet
-            playerImageBox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer;
-            enemyImagebox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer;
+            WandL.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
+            playerImageBox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
+            enemyImagebox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
             textBoxBet.Text = "";
         }
 
@@ -97,22 +98,37 @@ namespace JackpotNPoy
                 else if (this.btnPaper.BackColor == Color.SeaGreen) { playerImageBox.Image = global::JackpotNPoy.Properties.Resources.Paper; }
                 else if (this.btnScissor.BackColor == Color.SeaGreen) { playerImageBox.Image = global::JackpotNPoy.Properties.Resources.Scissor; }
                 //Reward Function
-                if (this.playerImageBox.Image == global::JackpotNPoy.Properties.Resources.Paper) // Win
+                if (this.btnPaper.BackColor == Color.SeaGreen) // Win using Paper
                 {
                     //Reward
-                    this.BalanceC.Text += this.textBoxBet.Text + this.textBoxBet.Text;
+                    rt.Defualt_Balance += float.Parse(textBoxBet.Text)*2;
+                    this.BalanceC.Text = rt.Defualt_Balance.ToString();
                     //Cast Enemy Balance
                     rt.Enemy_Balanc -= float.Parse(this.textBoxBet.Text);
                     this.lblComputerBalance.Text = rt.Enemy_Balanc.ToString() ;
                     //Indicate
-                    this.lblPlayerWL.Text = rt.playerName+" Win You lose!";
+                    this.lblPlayerWL.Text = rt.playerName+" Win!";
+                    this.WandL.Image = global::JackpotNPoy.Properties.Resources.Money;
+                    if (rt.Enemy_Balanc <= 0)
+                    {
+                        this.lblPlayerWL.Text = "Enemy Computer bankrupt. Win!";
+                        this.panel6.BackColor = Color.Red;
+                    }
                 }
-                else if (this.playerImageBox.Image == global::JackpotNPoy.Properties.Resources.Scissor) //Lose
+                else if (this.btnScissor.BackColor == Color.SeaGreen) //Lose using scissor
                 {
                     //Lose Reward
-                    rt.Enemy_Balanc += float.Parse(this.textBoxBet.Text + this.textBoxBet.Text);
+                    rt.Enemy_Balanc += float.Parse(this.textBoxBet.Text)*2;
                     //Indicate
                     this.lblPlayerWL.Text = "Computer Win You lose!";
+                    this.WandL.Image = global::JackpotNPoy.Properties.Resources.lose;
+                    this.panel6.BackColor = Color.Red;
+                }
+                else // Draw
+                {
+                    rt.Defualt_Balance += float.Parse(textBoxBet.Text);
+                    this.BalanceC.Text = rt.Defualt_Balance.ToString();
+                    this.lblPlayerWL.Text = "Draw";
                 }
             }
             else if (Computer_Enemy == 1) //Paper
@@ -124,22 +140,36 @@ namespace JackpotNPoy
                 else if (this.btnPaper.BackColor == Color.SeaGreen) { playerImageBox.Image = global::JackpotNPoy.Properties.Resources.Paper; }
                 else if (this.btnScissor.BackColor == Color.SeaGreen) { playerImageBox.Image = global::JackpotNPoy.Properties.Resources.Scissor; }
                 //Reward Function
-                if (this.playerImageBox.Image == global::JackpotNPoy.Properties.Resources.Scissor) // Win
+                if (this.btnScissor.BackColor == Color.SeaGreen) // Win using scissor
                 {
                     //Reward
-                    this.BalanceC.Text += this.textBoxBet.Text + this.textBoxBet.Text;
+                    rt.Defualt_Balance += float.Parse(textBoxBet.Text) * 2;
+                    this.BalanceC.Text = rt.Defualt_Balance.ToString();
                     //Cast Enemy Balance
                     rt.Enemy_Balanc -= float.Parse(this.textBoxBet.Text);
                     this.lblComputerBalance.Text = rt.Enemy_Balanc.ToString();
                     //Indicate
-                    this.lblPlayerWL.Text = rt.playerName + " Win You lose!";
+                    this.lblPlayerWL.Text = rt.playerName + " Win!";
+                    this.WandL.Image = global::JackpotNPoy.Properties.Resources.Money;
+                    if (rt.Enemy_Balanc <= 0)
+                    {
+                        this.lblComputerBalance.Text = "Enemy Computer bankrupt. Win!";
+                        this.panel6.BackColor = Color.Red;
+                    }
                 }
-                else if (this.playerImageBox.Image == global::JackpotNPoy.Properties.Resources.Rock) //Lose
+                else if (this.btnRock.BackColor == Color.SeaGreen) //Lose using rock
                 {
                     //Lose Reward
-                    rt.Enemy_Balanc += float.Parse(this.textBoxBet.Text + this.textBoxBet.Text);
+                    rt.Enemy_Balanc += float.Parse(this.textBoxBet.Text) * 2;
                     //Indicate
                     this.lblPlayerWL.Text = "Computer Win You lose!";
+                    this.WandL.Image = global::JackpotNPoy.Properties.Resources.lose;
+                }
+                else // Draw
+                {
+                    rt.Defualt_Balance += float.Parse(textBoxBet.Text);
+                    this.BalanceC.Text = rt.Defualt_Balance.ToString();
+                    this.lblPlayerWL.Text = "Draw";
                 }
             }
             else if (Computer_Enemy == 2)//Scissor
@@ -151,25 +181,40 @@ namespace JackpotNPoy
                 else if (this.btnPaper.BackColor == Color.SeaGreen) { playerImageBox.Image = global::JackpotNPoy.Properties.Resources.Paper; }
                 else if (this.btnScissor.BackColor == Color.SeaGreen) { playerImageBox.Image = global::JackpotNPoy.Properties.Resources.Scissor; }
                 //Reward Function
-                if (this.playerImageBox.Image == global::JackpotNPoy.Properties.Resources.Rock) // Win
+                if (this.btnRock.BackColor == Color.SeaGreen) // Win using rock
                 {
                     //Reward
-                    this.BalanceC.Text += this.textBoxBet.Text + this.textBoxBet.Text;
+                    rt.Defualt_Balance += float.Parse(textBoxBet.Text) * 2;
+                    this.BalanceC.Text = rt.Defualt_Balance.ToString();
                     //Cast Enemy Balance
                     rt.Enemy_Balanc -= float.Parse(this.textBoxBet.Text);
                     this.lblComputerBalance.Text = rt.Enemy_Balanc.ToString();
                     //Indicate
-                    this.lblPlayerWL.Text = rt.playerName + " Win You lose!";
+                    this.lblPlayerWL.Text = rt.playerName + " Win!";
+                    this.WandL.Image = global::JackpotNPoy.Properties.Resources.Money;
+                    if (rt.Enemy_Balanc <= 0) 
+                    {
+                        this.lblComputerBalance.Text = "Enemy Computer bankrupt. Win!";
+                    }
                 }
-                else if (this.playerImageBox.Image == global::JackpotNPoy.Properties.Resources.Paper) //Lose
+                else if (this.btnPaper.BackColor == Color.SeaGreen) //Lose using paper
                 {
                     //Lose Reward
-                    rt.Enemy_Balanc += float.Parse(this.textBoxBet.Text + this.textBoxBet.Text);
+                    rt.Enemy_Balanc += float.Parse(this.textBoxBet.Text) * 2;
                     //Indicate
                     this.lblPlayerWL.Text = "Computer Win You lose!";
+                    this.WandL.Image = global::JackpotNPoy.Properties.Resources.lose;
 
                 }
+                else // Draw
+                {
+                    rt.Defualt_Balance += float.Parse(textBoxBet.Text);
+                    this.BalanceC.Text = rt.Defualt_Balance.ToString();
+                    this.lblPlayerWL.Text = "Draw";
+                }
+
             }
+            
 
         }
 
@@ -179,7 +224,12 @@ namespace JackpotNPoy
             if (this.textBoxBet.Text== "0" || this.textBoxBet.Text == "") 
             {
                 MessageBox.Show("Please Bet first, to start to play!", "Jackpot n' poy", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-            }else if (this.btnRock.BackColor == Color.SeaGreen || this.btnPaper.BackColor == Color.SeaGreen || this.btnScissor.BackColor == Color.SeaGreen) 
+            }
+            else if (float.Parse(textBoxBet.Text) > float.Parse(BalanceC.Text) || float.Parse(textBoxBet.Text) <= 0)
+            {
+                MessageBox.Show("Not enough Balance!", "Jackpot n' poy", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            }
+            else if (this.btnRock.BackColor == Color.SeaGreen || this.btnPaper.BackColor == Color.SeaGreen || this.btnScissor.BackColor == Color.SeaGreen) 
             {
                 //Disable Other Key to Start
                 btnLock.Enabled = false;
@@ -224,6 +274,7 @@ namespace JackpotNPoy
                 textBoxBet.Text = textBoxBet.Text.Remove(textBoxBet.Text.Length - 1);
 
             }
+            
             else if (this.textBoxBet.Text ==  "0" || this.textBoxBet.Text == "")
             {
                 

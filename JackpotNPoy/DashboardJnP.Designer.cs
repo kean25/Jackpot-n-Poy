@@ -305,7 +305,7 @@ namespace JackpotNPoy
             // playerImageBox
             // 
             this.playerImageBox.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.playerImageBox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer;
+            this.playerImageBox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
             this.playerImageBox.Location = new System.Drawing.Point(16, 16);
             this.playerImageBox.Name = "playerImageBox";
             this.playerImageBox.Size = new System.Drawing.Size(203, 134);
@@ -324,7 +324,7 @@ namespace JackpotNPoy
             // enemyImagebox
             // 
             this.enemyImagebox.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.enemyImagebox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer;
+            this.enemyImagebox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
             this.enemyImagebox.Location = new System.Drawing.Point(16, 16);
             this.enemyImagebox.Name = "enemyImagebox";
             this.enemyImagebox.Size = new System.Drawing.Size(203, 134);
@@ -346,7 +346,7 @@ namespace JackpotNPoy
             // 
             this.lblComputerBalance.AutoSize = true;
             this.lblComputerBalance.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblComputerBalance.Location = new System.Drawing.Point(385, 297);
+            this.lblComputerBalance.Location = new System.Drawing.Point(288, 297);
             this.lblComputerBalance.Name = "lblComputerBalance";
             this.lblComputerBalance.Size = new System.Drawing.Size(107, 16);
             this.lblComputerBalance.TabIndex = 14;
@@ -363,7 +363,7 @@ namespace JackpotNPoy
             // WandL
             // 
             this.WandL.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.WandL.Image = global::JackpotNPoy.Properties.Resources.lose;
+            this.WandL.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
             this.WandL.Location = new System.Drawing.Point(3, 3);
             this.WandL.Name = "WandL";
             this.WandL.Size = new System.Drawing.Size(77, 66);
@@ -373,7 +373,7 @@ namespace JackpotNPoy
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.SystemColors.Control;
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.Controls.Add(this.lblPlayerWL);
             this.panel8.Location = new System.Drawing.Point(148, 345);
             this.panel8.Name = "panel8";
@@ -384,10 +384,11 @@ namespace JackpotNPoy
             // 
             this.lblPlayerWL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPlayerWL.AutoSize = true;
-            this.lblPlayerWL.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerWL.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerWL.ForeColor = System.Drawing.Color.White;
             this.lblPlayerWL.Location = new System.Drawing.Point(49, 21);
             this.lblPlayerWL.Name = "lblPlayerWL";
-            this.lblPlayerWL.Size = new System.Drawing.Size(135, 16);
+            this.lblPlayerWL.Size = new System.Drawing.Size(142, 16);
             this.lblPlayerWL.TabIndex = 0;
             this.lblPlayerWL.Text = "Show Player win or lose";
             this.lblPlayerWL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
