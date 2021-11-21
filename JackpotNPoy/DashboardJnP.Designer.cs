@@ -52,7 +52,6 @@ namespace JackpotNPoy
             this.playerImageBox = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.enemyImagebox = new System.Windows.Forms.PictureBox();
-            this.lblPlayerCountBattle = new System.Windows.Forms.Label();
             this.lblComputerBalance = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.WandL = new System.Windows.Forms.PictureBox();
@@ -193,6 +192,7 @@ namespace JackpotNPoy
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.SystemColors.Control;
             this.panel4.Controls.Add(this.linkLabelReset);
             this.panel4.Controls.Add(this.roundedButtonPlay);
@@ -208,6 +208,7 @@ namespace JackpotNPoy
             // 
             // linkLabelReset
             // 
+            this.linkLabelReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabelReset.AutoSize = true;
             this.linkLabelReset.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.linkLabelReset.Location = new System.Drawing.Point(113, 301);
@@ -216,6 +217,7 @@ namespace JackpotNPoy
             this.linkLabelReset.TabIndex = 6;
             this.linkLabelReset.TabStop = true;
             this.linkLabelReset.Text = "Reset";
+            this.linkLabelReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkLabelReset.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelReset_LinkClicked);
             // 
             // roundedButtonPlay
@@ -332,16 +334,6 @@ namespace JackpotNPoy
             this.enemyImagebox.TabIndex = 0;
             this.enemyImagebox.TabStop = false;
             // 
-            // lblPlayerCountBattle
-            // 
-            this.lblPlayerCountBattle.AutoSize = true;
-            this.lblPlayerCountBattle.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerCountBattle.Location = new System.Drawing.Point(25, 297);
-            this.lblPlayerCountBattle.Name = "lblPlayerCountBattle";
-            this.lblPlayerCountBattle.Size = new System.Drawing.Size(76, 16);
-            this.lblPlayerCountBattle.TabIndex = 13;
-            this.lblPlayerCountBattle.Text = "Show Count ";
-            // 
             // lblComputerBalance
             // 
             this.lblComputerBalance.AutoSize = true;
@@ -414,11 +406,11 @@ namespace JackpotNPoy
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.lblComputerBalance);
-            this.Controls.Add(this.lblPlayerCountBattle);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "DashboardJnP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jackpot n\' Poy";
@@ -458,7 +450,6 @@ namespace JackpotNPoy
         private System.Windows.Forms.Button btnRock;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lblPlayerCountBattle;
         private System.Windows.Forms.Label lblComputerBalance;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;

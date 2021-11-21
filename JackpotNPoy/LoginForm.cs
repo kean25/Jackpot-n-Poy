@@ -103,7 +103,14 @@ namespace JackpotNPoy
             djp.playerChangeName.Text = rt.Trial_Name; // Change Name
             djp.statusC.Text = rt.Status_Trial; // Change Status
             djp.balanceC.Text = rt.Trial_Balance; // Guest Balance Infinite
-            
+            //Avail Function
+            djp.ComputerBalance.Text = "Infinite";
+            djp.ButtonPlay.Enabled = true;
+            djp.ButtonPlay.Text = "Play";
+            djp.Reset.Text = "You are in Guest mode";
+            djp.Reset.SetBounds(66, 300,37, 16);
+            djp.Reset.Enabled = false;
+            djp.TextBet.Enabled = false;
             //Change Tab                   
             this.Hide();
             djp.ShowDialog();
