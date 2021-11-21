@@ -313,7 +313,7 @@ namespace JackpotNPoy
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.Control;
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.playerImageBox);
             this.panel5.Location = new System.Drawing.Point(25, 126);
             this.panel5.Name = "panel5";
@@ -333,6 +333,7 @@ namespace JackpotNPoy
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Controls.Add(this.enemyImagebox);
             this.panel6.Location = new System.Drawing.Point(288, 126);
             this.panel6.Name = "panel6";
@@ -354,7 +355,7 @@ namespace JackpotNPoy
             // 
             this.lblComputerBalance.AutoSize = true;
             this.lblComputerBalance.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblComputerBalance.Location = new System.Drawing.Point(288, 297);
+            this.lblComputerBalance.Location = new System.Drawing.Point(304, 297);
             this.lblComputerBalance.Name = "lblComputerBalance";
             this.lblComputerBalance.Size = new System.Drawing.Size(107, 16);
             this.lblComputerBalance.TabIndex = 14;
