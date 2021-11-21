@@ -93,9 +93,39 @@ namespace JackpotNPoy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lose {
+            get {
+                object obj = ResourceManager.GetObject("lose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NoAnswer {
+            get {
+                object obj = ResourceManager.GetObject("NoAnswer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Paper {
             get {
                 object obj = ResourceManager.GetObject("Paper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rock {
+            get {
+                object obj = ResourceManager.GetObject("Rock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

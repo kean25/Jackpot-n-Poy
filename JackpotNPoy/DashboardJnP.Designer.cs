@@ -49,13 +49,13 @@ namespace JackpotNPoy
             this.btnPaper = new System.Windows.Forms.Button();
             this.btnRock = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.playerImageBox = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.enemyImagebox = new System.Windows.Forms.PictureBox();
             this.lblPlayerCountBattle = new System.Windows.Forms.Label();
             this.lblComputerBalance = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.WandL = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblPlayerWL = new System.Windows.Forms.Label();
             this.lblLinkSurrender = new System.Windows.Forms.LinkLabel();
@@ -65,11 +65,11 @@ namespace JackpotNPoy
             ((System.ComponentModel.ISupportInitialize)(this.imageData1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerImageBox)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemyImagebox)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WandL)).BeginInit();
             this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -234,13 +234,14 @@ namespace JackpotNPoy
             // 
             // btnLock
             // 
+            this.btnLock.BackColor = System.Drawing.Color.White;
             this.btnLock.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLock.Location = new System.Drawing.Point(158, 154);
             this.btnLock.Name = "btnLock";
             this.btnLock.Size = new System.Drawing.Size(52, 24);
             this.btnLock.TabIndex = 4;
             this.btnLock.Text = "Lock";
-            this.btnLock.UseVisualStyleBackColor = true;
+            this.btnLock.UseVisualStyleBackColor = false;
             this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
             // 
             // textBoxBet
@@ -255,75 +256,81 @@ namespace JackpotNPoy
             // 
             // btnScissor
             // 
+            this.btnScissor.BackColor = System.Drawing.Color.White;
             this.btnScissor.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnScissor.ForeColor = System.Drawing.Color.Black;
             this.btnScissor.Location = new System.Drawing.Point(50, 116);
             this.btnScissor.Name = "btnScissor";
             this.btnScissor.Size = new System.Drawing.Size(160, 23);
             this.btnScissor.TabIndex = 2;
             this.btnScissor.Text = "Scissors";
-            this.btnScissor.UseVisualStyleBackColor = true;
+            this.btnScissor.UseVisualStyleBackColor = false;
             this.btnScissor.Click += new System.EventHandler(this.btnScissor_Click);
             // 
             // btnPaper
             // 
+            this.btnPaper.BackColor = System.Drawing.Color.White;
             this.btnPaper.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPaper.ForeColor = System.Drawing.Color.Black;
             this.btnPaper.Location = new System.Drawing.Point(50, 71);
             this.btnPaper.Name = "btnPaper";
             this.btnPaper.Size = new System.Drawing.Size(160, 23);
             this.btnPaper.TabIndex = 1;
             this.btnPaper.Text = "Paper";
-            this.btnPaper.UseVisualStyleBackColor = true;
+            this.btnPaper.UseVisualStyleBackColor = false;
             this.btnPaper.Click += new System.EventHandler(this.btnPaper_Click);
             // 
             // btnRock
             // 
+            this.btnRock.BackColor = System.Drawing.Color.White;
             this.btnRock.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRock.ForeColor = System.Drawing.Color.Black;
             this.btnRock.Location = new System.Drawing.Point(50, 28);
             this.btnRock.Name = "btnRock";
             this.btnRock.Size = new System.Drawing.Size(160, 23);
             this.btnRock.TabIndex = 0;
             this.btnRock.Text = "Rock";
-            this.btnRock.UseVisualStyleBackColor = true;
+            this.btnRock.UseVisualStyleBackColor = false;
             this.btnRock.Click += new System.EventHandler(this.btnRock_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
-            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Controls.Add(this.playerImageBox);
             this.panel5.Location = new System.Drawing.Point(25, 126);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(234, 168);
             this.panel5.TabIndex = 11;
             // 
-            // pictureBox1
+            // playerImageBox
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox1.Image = global::JackpotNPoy.Properties.Resources.Paper;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 134);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.playerImageBox.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.playerImageBox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer;
+            this.playerImageBox.Location = new System.Drawing.Point(16, 16);
+            this.playerImageBox.Name = "playerImageBox";
+            this.playerImageBox.Size = new System.Drawing.Size(203, 134);
+            this.playerImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.playerImageBox.TabIndex = 0;
+            this.playerImageBox.TabStop = false;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.pictureBox2);
+            this.panel6.Controls.Add(this.enemyImagebox);
             this.panel6.Location = new System.Drawing.Point(288, 126);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(234, 168);
             this.panel6.TabIndex = 12;
             // 
-            // pictureBox2
+            // enemyImagebox
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox2.Image = global::JackpotNPoy.Properties.Resources.Scissor;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(203, 134);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.enemyImagebox.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.enemyImagebox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer;
+            this.enemyImagebox.Location = new System.Drawing.Point(16, 16);
+            this.enemyImagebox.Name = "enemyImagebox";
+            this.enemyImagebox.Size = new System.Drawing.Size(203, 134);
+            this.enemyImagebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.enemyImagebox.TabIndex = 0;
+            this.enemyImagebox.TabStop = false;
             // 
             // lblPlayerCountBattle
             // 
@@ -341,26 +348,28 @@ namespace JackpotNPoy
             this.lblComputerBalance.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblComputerBalance.Location = new System.Drawing.Point(385, 297);
             this.lblComputerBalance.Name = "lblComputerBalance";
-            this.lblComputerBalance.Size = new System.Drawing.Size(140, 16);
+            this.lblComputerBalance.Size = new System.Drawing.Size(107, 16);
             this.lblComputerBalance.TabIndex = 14;
-            this.lblComputerBalance.Text = "Show Computer Balance";
+            this.lblComputerBalance.Text = "Computer Balance";
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.pictureBox3);
+            this.panel7.Controls.Add(this.WandL);
             this.panel7.Location = new System.Drawing.Point(25, 345);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(83, 72);
             this.panel7.TabIndex = 15;
             // 
-            // pictureBox3
+            // WandL
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 66);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.WandL.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.WandL.Image = global::JackpotNPoy.Properties.Resources.lose;
+            this.WandL.Location = new System.Drawing.Point(3, 3);
+            this.WandL.Name = "WandL";
+            this.WandL.Size = new System.Drawing.Size(77, 66);
+            this.WandL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.WandL.TabIndex = 0;
+            this.WandL.TabStop = false;
             // 
             // panel8
             // 
@@ -421,11 +430,11 @@ namespace JackpotNPoy
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerImageBox)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemyImagebox)).EndInit();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WandL)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.ResumeLayout(false);
@@ -457,9 +466,9 @@ namespace JackpotNPoy
         private System.Windows.Forms.Button btnLock;
         private System.Windows.Forms.TextBox textBoxBet;
         private System.Windows.Forms.Label lblPlayerWL;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox playerImageBox;
+        private System.Windows.Forms.PictureBox enemyImagebox;
+        private System.Windows.Forms.PictureBox WandL;
         private System.Windows.Forms.LinkLabel linkLabelReset;
         private System.Windows.Forms.Label StatusC;
         private System.Windows.Forms.Label BalanceC;
