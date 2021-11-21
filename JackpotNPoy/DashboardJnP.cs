@@ -30,6 +30,8 @@ namespace JackpotNPoy
         public Button ButtonPlay {get { return roundedButtonPlay; }set { roundedButtonPlay = (Tophet.RoundedButton)value; }}
         public LinkLabel Reset { get { return this.linkLabelReset; } set { this.linkLabelReset = value; } }
         public TextBox TextBet { get { return textBoxBet; }set { textBoxBet = value; } }
+        public LinkLabel guestReset { get { return ResetGuest; }set { ResetGuest = value; } }
+        public Button LockMe { get { return btnLock; } set { btnLock = value; } }
 
         //Function
         private void btnLogout_Click(object sender, EventArgs e)
@@ -495,6 +497,33 @@ namespace JackpotNPoy
                 }
                 
             }
+
+        }
+
+        private void ResetGuest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            btnLock.Enabled = false;
+            btnPaper.Enabled = true;
+            btnRock.Enabled = true;
+            btnScissor.Enabled = true;
+            textBoxBet.Enabled = false;
+            roundedButtonPlay.Enabled = true;
+
+            //Reset Color BTN
+            //Not Select Other
+            btnRock.BackColor = Color.White;
+            btnRock.ForeColor = Color.Black;
+            btnPaper.BackColor = Color.White;
+            btnPaper.ForeColor = Color.Black;
+            btnScissor.BackColor = Color.White;
+            btnScissor.ForeColor = Color.Black;
+            btnLock.BackColor = Color.White;
+            btnLock.ForeColor = Color.Black;
+            //Reset Bet
+            WandL.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
+            playerImageBox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
+            enemyImagebox.Image = global::JackpotNPoy.Properties.Resources.NoAnswer2;
+            textBoxBet.Text = "";
 
         }
     }

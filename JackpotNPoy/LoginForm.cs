@@ -87,6 +87,7 @@ namespace JackpotNPoy
                 djp.statusC.Text = rt.Status_Player; // Change Status
                 djp.balanceC.Text = rt.Defualt_Balance.ToString(); // Player Balance 5000
                 djp.profileChange.Image = rt.playerProfile.Image; // Player set Image
+                djp.guestReset.Visible = false;
                 //Change Tab
                 this.Hide();
                 djp.ShowDialog();
@@ -111,6 +112,9 @@ namespace JackpotNPoy
             djp.Reset.SetBounds(66, 300,37, 16);
             djp.Reset.Enabled = false;
             djp.TextBet.Enabled = false;
+            djp.TextBet.Visible = false;
+            djp.guestReset.Visible = true;
+            djp.LockMe.Visible = false;
             //Change Tab                   
             this.Hide();
             djp.ShowDialog();

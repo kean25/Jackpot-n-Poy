@@ -58,6 +58,7 @@ namespace JackpotNPoy
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblPlayerWL = new System.Windows.Forms.Label();
             this.lblLinkSurrender = new System.Windows.Forms.LinkLabel();
+            this.ResetGuest = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -194,6 +195,7 @@ namespace JackpotNPoy
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.SystemColors.Control;
+            this.panel4.Controls.Add(this.ResetGuest);
             this.panel4.Controls.Add(this.linkLabelReset);
             this.panel4.Controls.Add(this.roundedButtonPlay);
             this.panel4.Controls.Add(this.btnLock);
@@ -396,6 +398,20 @@ namespace JackpotNPoy
             this.lblLinkSurrender.TabStop = true;
             this.lblLinkSurrender.Text = "Surrender";
             // 
+            // ResetGuest
+            // 
+            this.ResetGuest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ResetGuest.AutoSize = true;
+            this.ResetGuest.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetGuest.Location = new System.Drawing.Point(113, 327);
+            this.ResetGuest.Name = "ResetGuest";
+            this.ResetGuest.Size = new System.Drawing.Size(37, 16);
+            this.ResetGuest.TabIndex = 7;
+            this.ResetGuest.TabStop = true;
+            this.ResetGuest.Text = "Reset";
+            this.ResetGuest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ResetGuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ResetGuest_LinkClicked);
+            // 
             // DashboardJnP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -465,5 +481,6 @@ namespace JackpotNPoy
         private System.Windows.Forms.Label StatusC;
         private System.Windows.Forms.Label BalanceC;
         public System.Windows.Forms.Label PlayerNameLabelC;
+        private System.Windows.Forms.LinkLabel ResetGuest;
     }
 }
